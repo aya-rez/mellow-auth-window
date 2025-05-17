@@ -94,7 +94,7 @@ const LoginForm = () => {
           </div>
           <Button 
             type="submit" 
-            className="w-full bg-teal-DEFAULT hover:bg-teal-DEFAULT/90 text-white flex items-center justify-center gap-2"
+            className="w-full bg-blue-500 hover:bg-blue-600 text-white flex items-center justify-center gap-2"
             disabled={isLoading}
           >
             {isLoading ? "Logging in..." : (
