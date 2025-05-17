@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
-import { Eye, EyeOff, Lock, User } from "lucide-react";
+import { Eye, EyeOff, Lock, LogIn, User } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 
 const LoginForm = () => {
@@ -94,20 +94,19 @@ const LoginForm = () => {
           </div>
           <Button 
             type="submit" 
-            className="w-full bg-teal-DEFAULT hover:bg-teal-DEFAULT/90 text-white"
+            className="w-full bg-teal-DEFAULT hover:bg-teal-DEFAULT/90 text-white flex items-center justify-center gap-2"
             disabled={isLoading}
           >
-            {isLoading ? "Logging in..." : "Sign In"}
+            {isLoading ? "Logging in..." : (
+              <>
+                <LogIn size={18} /> Login
+              </>
+            )}
           </Button>
         </form>
       </CardContent>
       <CardFooter className="flex justify-center mt-2">
-        <div className="text-center text-sm text-teal-light">
-          Don't have an account?{" "}
-          <a href="#" className="text-teal-DEFAULT hover:underline">
-            Sign up
-          </a>
-        </div>
+        {/* Sign up link removed */}
       </CardFooter>
     </Card>
   );
