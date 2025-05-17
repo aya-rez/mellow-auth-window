@@ -92,19 +92,6 @@ const LoginForm = () => {
               </button>
             </div>
           </div>
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <input
-                type="checkbox"
-                id="remember"
-                className="w-4 h-4 accent-teal-DEFAULT rounded focus:ring-teal-DEFAULT/50"
-              />
-              <label htmlFor="remember" className="text-sm text-teal-dark">Remember me</label>
-            </div>
-            <a href="#" className="text-sm text-teal-DEFAULT hover:underline">
-              Forgot password?
-            </a>
-          </div>
           <Button 
             type="submit" 
             className="w-full bg-teal-DEFAULT hover:bg-teal-DEFAULT/90 text-white"
@@ -114,23 +101,7 @@ const LoginForm = () => {
           </Button>
         </form>
       </CardContent>
-      <CardFooter className="flex flex-col space-y-4 mt-2">
-        <div className="relative w-full">
-          <div className="absolute inset-0 flex items-center">
-            <div className="w-full border-t border-teal-light/20"></div>
-          </div>
-          <div className="relative flex justify-center text-xs uppercase">
-            <span className="px-2 bg-white text-teal-light">Or continue with</span>
-          </div>
-        </div>
-        <div className="flex space-x-3">
-          <Button variant="outline" className="w-full border-teal-light/30 hover:bg-teal-light/10 text-teal-DEFAULT">
-            Google
-          </Button>
-          <Button variant="outline" className="w-full border-teal-light/30 hover:bg-teal-light/10 text-teal-DEFAULT">
-            GitHub
-          </Button>
-        </div>
+      <CardFooter className="flex justify-center mt-2">
         <div className="text-center text-sm text-teal-light">
           Don't have an account?{" "}
           <a href="#" className="text-teal-DEFAULT hover:underline">
